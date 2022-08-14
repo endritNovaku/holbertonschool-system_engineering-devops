@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+#connect to ubutu server using private key
 ssh -i ~/.ssh/school ubutu@54.196.190.16
