@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #connecting with ssh server
-ssh-copy-ip -i ~/.ssh/school ubuntu@54.196.190.16
+PasswordAuthentication no
+IdentityFile ~/.ssh/school
