@@ -1,3 +1,4 @@
+# Creating a file at /tmp folder
 file {'school':
 ensure  => 'present',
 path    => '/tmp/school',
