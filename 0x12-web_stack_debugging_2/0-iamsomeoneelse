@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-runuser -l  $1 -c 'whoami'
+runuser -l  "$1" -c 'whoami'
