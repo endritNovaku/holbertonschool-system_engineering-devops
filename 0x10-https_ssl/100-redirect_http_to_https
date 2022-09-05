@@ -36,6 +36,7 @@ defaults
 frontend http_front
   bind *:80
   mode http
+  http-request redirect scheme https code 301 unless { ssl_fc }
   reqadd X-Forwareded-Proto:\ http
   default_backend http_back
 
@@ -48,7 +49,6 @@ frontend www-https
 
 backend http_back
   balance roundrobin
-  redirect scheme https if !{ ssl_fc }
   server 4475-web-01 18.212.240.170:80 check
   server 4475-web-02 3.85.22.54:80 check
 
