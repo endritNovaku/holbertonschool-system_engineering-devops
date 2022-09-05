@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-runuser -l  $1 -c 'whoami'
+#!/usr/bin/en bash
+sudo - u "$1" whoami
