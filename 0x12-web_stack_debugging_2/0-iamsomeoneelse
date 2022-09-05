@@ -1,2 +1,3 @@
-#!/usr/bin/env bash
-runuser -l  "$1" -c 'whoami'
+#!/usr/bin/en bash
+# run the command whoami into a different user
+sudo -u "$1" whoami
