@@ -21,6 +21,6 @@ if __name__ == "__main__":
                                 quotechar='"', quoting=csv.QUOTE_ALL)
         for i in range(0, len(todo)):
             spamwriter.writerow([user_json['id'],
-                                 user_json['name'],
+                                 user_json['username'],
                                  todo[i]['completed'],
                                  todo[i]['title']])
