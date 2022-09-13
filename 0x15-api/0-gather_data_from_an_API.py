@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 import requests
 import sys
-"""print the user and the tasks he has done"""
+"""
+Print the user and the tasks he has done"""
 
 user_url = "https://jsonplaceholder.typicode.com/users/{}"\
            .format(int(sys.argv[1]))
