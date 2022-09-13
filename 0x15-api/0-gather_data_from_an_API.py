@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+"""Print a user and their completed tasks"""
 import requests
 import sys
-"""
-Print the user and the tasks he has done"""
+
 
 if __name__ == "__main__":
     user_url = "https://jsonplaceholder.typicode.com/users/{}"\
